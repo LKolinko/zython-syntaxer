@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['variable_5fnode_0',['variable_node',['../structTid_1_1Variable__Node.html#a385eb5baabe06e54712042787c9ab29b',1,'Tid::Variable_Node::Variable_Node()=default'],['../structTid_1_1Variable__Node.html#a4268fbfbfecdd910e7d57e37d4bd0116',1,'Tid::Variable_Node::Variable_Node(const std::string &amp;s)'],['../structTid_1_1Variable__Node.html#a5070971addf1d49d98deb3090d64dac1',1,'Tid::Variable_Node::Variable_Node(const std::string &amp;s, variable_type type)']]]
+  ['tid_0',['Tid',['../classTid.html#a7ff9ce5e041e0be437c595fb37d7febb',1,'Tid']]],
+  ['tostring_1',['ToString',['../syntaxer_8cppm.html#a65ca22d1ef0abebf48c4fbdef36b8ab3',1,'syntaxer.cppm']]],
+  ['tovaluestring_2',['ToValueString',['../classTid.html#ac473aa6a62b74354f5af18b06a1a37d3',1,'Tid']]],
+  ['typefromstring_3',['TypeFromString',['../classTid.html#ac82e25102ed9e3a876d705863e916798',1,'Tid']]]
 ];
