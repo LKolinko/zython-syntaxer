@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['parameters_0',['parameters',['../structTid_1_1Function__Node.html#a6d974b367b864ad6a765fb9b69cd01ef',1,'Tid::Function_Node']]],
-  ['parse_1',['parse',['../structstd_1_1formatter_3_01decltype_07std_1_1declval_3_01Lexem_01_4_07_08_8GetPosition_07_08_08_4.html#a942c506a4139e36ea3b19c14a3336779',1,'std::formatter&lt; decltype(std::declval&lt; Lexem &gt;().GetPosition())&gt;']]]
+  ['name_0',['name',['../structTid_1_1Variable__Node.html#a9960fa58d5178fe7ea62402bb4e00a3d',1,'Tid::Variable_Node::name'],['../structTid_1_1Function__Node.html#ae1ac9d586da9b59a7c5b38cc1aa3b4b6',1,'Tid::Function_Node::name']]],
+  ['newscope_1',['NewScope',['../classTid.html#a6db67f743fe3fde3a1498822200be0d1',1,'Tid']]]
 ];

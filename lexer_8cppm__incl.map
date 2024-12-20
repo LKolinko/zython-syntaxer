@@ -1,0 +1,22 @@
+<map id="extern/lexer/import/lexer.cppm" name="extern/lexer/import/lexer.cppm">
+<area shape="rect" id="Node000001" title=" " alt="" coords="157,5,303,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,167,79,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,48,149,69,110,95,81,126,58,157,54,153,77,122,107,91,146,64,185,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="121,93,184,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,47,176,85,172,82,209,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="362,167,442,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="279,43,318,64,355,91,378,122,395,153,390,155,374,125,351,95,315,68,277,48"/>
+<area shape="rect" id="Node000005" href="$bor_8cppm.html" title=" " alt="" coords="209,93,251,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="233,46,233,79,227,79,227,46"/>
+<area shape="rect" id="Node000009" href="$lexem_8cppm.html" title=" " alt="" coords="277,93,340,119"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="251,44,289,82,285,85,247,47"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="209,118,86,164,85,159,207,113"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="205,167,255,192"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="233,119,233,153,227,153,227,119"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="103,167,181,192"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="218,121,169,160,165,156,214,117"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="279,167,338,192"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="244,117,288,156,284,159,241,121"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="325,117,378,156,374,160,322,121"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="311,119,311,153,306,153,306,119"/>
+</map>

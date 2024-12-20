@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['syntaxer_0',['syntaxer',['../module_syntaxer.html',1,'']]]
+  ['bor_0',['bor',['../module_bor.html',1,'']]]
 ];
