@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['newscope_0',['NewScope',['../classTid.html#a6db67f743fe3fde3a1498822200be0d1',1,'Tid']]]
+  ['operator_21_3d_0',['operator!=',['../structTid_1_1Variable__Node.html#ad2f9c824ac07bb74113055d78087507f',1,'Tid::Variable_Node']]],
+  ['operator_3d_3d_1',['operator==',['../structTid_1_1Variable__Node.html#a5c07cb437b92844e812fcd21eea165ea',1,'Tid::Variable_Node']]]
 ];
