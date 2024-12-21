@@ -104,15 +104,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac76e2768f726ce70fa7827afe6010c32" id="r_ac76e2768f726ce70fa7827afe6010c32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexem.html#ac76e2768f726ce70fa7827afe6010c32">Print</a> ()</td></tr>
 <tr class="separator:ac76e2768f726ce70fa7827afe6010c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba4f1ed0d6ad770fe4b443ccc3d38631" id="r_aba4f1ed0d6ad770fe4b443ccc3d38631"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexem.html#aba4f1ed0d6ad770fe4b443ccc3d38631">GetData</a> () const</td></tr>
+<tr class="memdesc:aba4f1ed0d6ad770fe4b443ccc3d38631"><td class="mdescLeft">&#160;</td><td class="mdescRight">get для даты  <br /></td></tr>
 <tr class="separator:aba4f1ed0d6ad770fe4b443ccc3d38631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa909e6ea790b962da44474366446f1a3" id="r_aa909e6ea790b962da44474366446f1a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318b">Lex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexem.html#aa909e6ea790b962da44474366446f1a3">GetType</a> () const</td></tr>
+<tr class="memdesc:aa909e6ea790b962da44474366446f1a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get для типа  <br /></td></tr>
 <tr class="separator:aa909e6ea790b962da44474366446f1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed9be2741c355004b0cb2b6b9d8ec154" id="r_aed9be2741c355004b0cb2b6b9d8ec154"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexem.html#aed9be2741c355004b0cb2b6b9d8ec154">GetPosition</a> () const</td></tr>
+<tr class="memdesc:aed9be2741c355004b0cb2b6b9d8ec154"><td class="mdescLeft">&#160;</td><td class="mdescRight">get для позиции  <br /></td></tr>
 <tr class="separator:aed9be2741c355004b0cb2b6b9d8ec154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00019">19</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
+<div class="textblock"><p>Класс лексемы. Содержит тип, позицию и дату </p>
+
+<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00022">22</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a865e947b1f396fbc6dd4c66714707e8a" name="a865e947b1f396fbc6dd4c66714707e8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a865e947b1f396fbc6dd4c66714707e8a">&#9670;&#160;</a></span>Lexem()</h2>
@@ -160,11 +164,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00021">21</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                         : type_(type), data_(std::move(data)),</div>
-<div class="line"><span class="lineno">   22</span>    pos_(<a class="code hl_variable" href="classLexem.html#a7c49e1fd7aada9fdd5b94f2a555348ad">line</a>, <a class="code hl_variable" href="classLexem.html#a5d369c9f8a2b2b500b1d2ac62b0b15f5">index</a>) {}</div>
-<div class="ttc" id="aclassLexem_html_a5d369c9f8a2b2b500b1d2ac62b0b15f5"><div class="ttname"><a href="classLexem.html#a5d369c9f8a2b2b500b1d2ac62b0b15f5">Lexem::index</a></div><div class="ttdeci">uint64_t index</div><div class="ttdef"><b>Definition</b> <a href="lexem_8cppm_source.html#l00044">lexem.cppm:44</a></div></div>
-<div class="ttc" id="aclassLexem_html_a7c49e1fd7aada9fdd5b94f2a555348ad"><div class="ttname"><a href="classLexem.html#a7c49e1fd7aada9fdd5b94f2a555348ad">Lexem::line</a></div><div class="ttdeci">uint64_t line</div><div class="ttdef"><b>Definition</b> <a href="lexem_8cppm_source.html#l00044">lexem.cppm:44</a></div></div>
+<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00024">24</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                                                         : type_(type), data_(std::move(data)),</div>
+<div class="line"><span class="lineno">   25</span>    pos_(<a class="code hl_variable" href="classLexem.html#a7c49e1fd7aada9fdd5b94f2a555348ad">line</a>, <a class="code hl_variable" href="classLexem.html#a5d369c9f8a2b2b500b1d2ac62b0b15f5">index</a>) {}</div>
+<div class="ttc" id="aclassLexem_html_a5d369c9f8a2b2b500b1d2ac62b0b15f5"><div class="ttname"><a href="classLexem.html#a5d369c9f8a2b2b500b1d2ac62b0b15f5">Lexem::index</a></div><div class="ttdeci">uint64_t index</div><div class="ttdef"><b>Definition</b> <a href="lexem_8cppm_source.html#l00050">lexem.cppm:50</a></div></div>
+<div class="ttc" id="aclassLexem_html_a7c49e1fd7aada9fdd5b94f2a555348ad"><div class="ttname"><a href="classLexem.html#a7c49e1fd7aada9fdd5b94f2a555348ad">Lexem::line</a></div><div class="ttdeci">uint64_t line</div><div class="ttdef"><b>Definition</b> <a href="lexem_8cppm_source.html#l00050">lexem.cppm:50</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -192,10 +196,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00028">28</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>                              {</div>
-<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">return</span> data_;</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
+<p>get для даты </p>
+
+<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00032">32</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                              {</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> data_;</div>
+<div class="line"><span class="lineno">   34</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -222,10 +228,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00036">36</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                             {</div>
-<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span> pos_;</div>
-<div class="line"><span class="lineno">   38</span>    }</div>
+<p>get для позиции </p>
+
+<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00042">42</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                             {</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> pos_;</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -252,10 +260,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00032">32</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>                        {</div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> type_;</div>
-<div class="line"><span class="lineno">   34</span>    }</div>
+<p>get для типа </p>
+
+<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00037">37</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                        {</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span> type_;</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -282,10 +292,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00024">24</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>                 {</div>
-<div class="line"><span class="lineno">   25</span>        std::cout &lt;&lt; static_cast&lt;std::underlying_type_t&lt;Lex&gt;&gt;(type_) &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; (data_ == <span class="stringliteral">&quot;\n&quot;</span> ? <span class="stringliteral">&quot;Endl&quot;</span> : data_) &lt;&lt; <span class="stringliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">   26</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00027">27</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                 {</div>
+<div class="line"><span class="lineno">   28</span>        std::cout &lt;&lt; static_cast&lt;std::underlying_type_t&lt;Lex&gt;&gt;(type_) &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; (data_ == <span class="stringliteral">&quot;\n&quot;</span> ? <span class="stringliteral">&quot;Endl&quot;</span> : data_) &lt;&lt; <span class="stringliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -302,7 +312,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00044">44</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00050">50</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
 
 </div>
 </div>
@@ -318,7 +328,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00044">44</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lexem_8cppm_source.html#l00050">50</a> of file <a class="el" href="lexem_8cppm_source.html">lexem.cppm</a>.</p>
 
 </div>
 </div>

@@ -104,11 +104,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aab743e2307b5ccd9dfd39744168d4304" id="r_aab743e2307b5ccd9dfd39744168d4304"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexer.html#aab743e2307b5ccd9dfd39744168d4304">Lexer</a> (const std::string &amp;file_name, const std::string &amp;token_file_name)</td></tr>
 <tr class="separator:aab743e2307b5ccd9dfd39744168d4304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12d08a5047b6cde9dd0a033d3b99e46c" id="r_a12d08a5047b6cde9dd0a033d3b99e46c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classLexem.html">Lexem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLexer.html#a12d08a5047b6cde9dd0a033d3b99e46c">Scan</a> ()</td></tr>
+<tr class="memdesc:a12d08a5047b6cde9dd0a033d3b99e46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для старта  <br /></td></tr>
 <tr class="separator:a12d08a5047b6cde9dd0a033d3b99e46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="lexer_8cppm_source.html#l00013">13</a> of file <a class="el" href="lexer_8cppm_source.html">lexer.cppm</a>.</p>
+<div class="textblock"><p>Класс лексического анализатора </p>
+
+<p class="definition">Definition at line <a class="el" href="lexer_8cppm_source.html#l00015">15</a> of file <a class="el" href="lexer_8cppm_source.html">lexer.cppm</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ece67400cc4fdf07d1dae1b586fa0e1" name="a4ece67400cc4fdf07d1dae1b586fa0e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ece67400cc4fdf07d1dae1b586fa0e1">&#9670;&#160;</a></span>Lexer() <span class="overload">[1/2]</span></h2>
@@ -169,10 +171,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexer_8cppm_source.html#l00017">17</a> of file <a class="el" href="lexer_8cppm_source.html">lexer.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>                                                                        : bor_(token_file_name) {</div>
-<div class="line"><span class="lineno">   18</span>        in_.open(file_name);</div>
-<div class="line"><span class="lineno">   19</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="lexer_8cppm_source.html#l00019">19</a> of file <a class="el" href="lexer_8cppm_source.html">lexer.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                                        : bor_(token_file_name) {</div>
+<div class="line"><span class="lineno">   20</span>        in_.open(file_name);</div>
+<div class="line"><span class="lineno">   21</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -200,51 +202,53 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lexer_8cppm_source.html#l00021">21</a> of file <a class="el" href="lexer_8cppm_source.html">lexer.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                            {</div>
-<div class="line"><span class="lineno">   22</span>        GetChar();</div>
-<div class="line"><span class="lineno">   23</span>        <span class="keywordflow">while</span> (!end_of_file_) {</div>
-<div class="line"><span class="lineno">   24</span>            <span class="keywordflow">if</span> (IsLetter(tec_char_) || tec_char_ == <span class="charliteral">&#39;:&#39;</span>) {</div>
-<div class="line"><span class="lineno">   25</span>                GetId();</div>
-<div class="line"><span class="lineno">   26</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (IsNumber(tec_char_)) {</div>
-<div class="line"><span class="lineno">   27</span>                GetNumberLiteral();</div>
-<div class="line"><span class="lineno">   28</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (IsOperator(tec_char_)) {</div>
-<div class="line"><span class="lineno">   29</span>                GetOperator();</div>
-<div class="line"><span class="lineno">   30</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tec_char_ == <span class="charliteral">&#39;&quot;&#39;</span>) {</div>
-<div class="line"><span class="lineno">   31</span>                GetStringLiteral();</div>
-<div class="line"><span class="lineno">   32</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (IsSeparator(tec_char_)) {</div>
-<div class="line"><span class="lineno">   33</span>                std::string data;</div>
-<div class="line"><span class="lineno">   34</span>                <span class="keywordflow">while</span> (tec_char_ == <span class="charliteral">&#39; &#39;</span> &amp;&amp; !end_of_file_) {</div>
-<div class="line"><span class="lineno">   35</span>                    data.push_back(tec_char_);</div>
-<div class="line"><span class="lineno">   36</span>                    GetChar();</div>
-<div class="line"><span class="lineno">   37</span>                }</div>
-<div class="line"><span class="lineno">   38</span>                data_.emplace_back(<a class="code hl_enumvalue" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318bacbd3f49bc03989a6a6018e75cc97d343">Lex::kSeparator</a>, data, line_, position_ - <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(data.size()));</div>
-<div class="line"><span class="lineno">   39</span>                <span class="keywordflow">if</span> (IsSeparator(tec_char_)) {</div>
-<div class="line"><span class="lineno">   40</span>                    GetChar();</div>
-<div class="line"><span class="lineno">   41</span>                }</div>
-<div class="line"><span class="lineno">   42</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tec_char_ == <span class="charliteral">&#39;#&#39;</span>) {</div>
-<div class="line"><span class="lineno">   43</span>                GetComment();</div>
-<div class="line"><span class="lineno">   44</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tec_char_ == <span class="charliteral">&#39;\n&#39;</span>) {</div>
-<div class="line"><span class="lineno">   45</span>                std::string data = <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   46</span>                data_.emplace_back(<a class="code hl_enumvalue" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318ba80ded164d8ca0218709503e1f96d99e5">Lex::kEndLine</a>, data, line_, position_ - <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(data.size()));</div>
-<div class="line"><span class="lineno">   47</span>                GetChar();</div>
-<div class="line"><span class="lineno">   48</span>                position_ = 1;</div>
-<div class="line"><span class="lineno">   49</span>                ++line_;</div>
-<div class="line"><span class="lineno">   50</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">if</span> (tec_char_ != <span class="charliteral">&#39;\r&#39;</span>) {</div>
-<div class="line"><span class="lineno">   52</span>                    std::string ans = <span class="stringliteral">&quot;unresolved external character: &quot;</span>;</div>
-<div class="line"><span class="lineno">   53</span>                    ans.push_back(tec_char_);</div>
-<div class="line"><span class="lineno">   54</span>                    <span class="keywordflow">throw</span> std::runtime_error(ans);</div>
-<div class="line"><span class="lineno">   55</span>                }</div>
-<div class="line"><span class="lineno">   56</span>                GetChar();</div>
-<div class="line"><span class="lineno">   57</span>            }</div>
-<div class="line"><span class="lineno">   58</span>        }</div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">while</span> (!data_.empty() &amp;&amp; data_.back().GetType() == <a class="code hl_enumvalue" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318ba80ded164d8ca0218709503e1f96d99e5">Lex::kEndLine</a>) {</div>
-<div class="line"><span class="lineno">   60</span>          data_.pop_back();</div>
+<p>Функция для старта </p>
+
+<p class="definition">Definition at line <a class="el" href="lexer_8cppm_source.html#l00024">24</a> of file <a class="el" href="lexer_8cppm_source.html">lexer.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                            {</div>
+<div class="line"><span class="lineno">   25</span>        GetChar();</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">while</span> (!end_of_file_) {</div>
+<div class="line"><span class="lineno">   27</span>            <span class="keywordflow">if</span> (IsLetter(tec_char_) || tec_char_ == <span class="charliteral">&#39;:&#39;</span>) {</div>
+<div class="line"><span class="lineno">   28</span>                GetId();</div>
+<div class="line"><span class="lineno">   29</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (IsNumber(tec_char_)) {</div>
+<div class="line"><span class="lineno">   30</span>                GetNumberLiteral();</div>
+<div class="line"><span class="lineno">   31</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (IsOperator(tec_char_)) {</div>
+<div class="line"><span class="lineno">   32</span>                GetOperator();</div>
+<div class="line"><span class="lineno">   33</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tec_char_ == <span class="charliteral">&#39;&quot;&#39;</span>) {</div>
+<div class="line"><span class="lineno">   34</span>                GetStringLiteral();</div>
+<div class="line"><span class="lineno">   35</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (IsSeparator(tec_char_)) {</div>
+<div class="line"><span class="lineno">   36</span>                std::string data;</div>
+<div class="line"><span class="lineno">   37</span>                <span class="keywordflow">while</span> (tec_char_ == <span class="charliteral">&#39; &#39;</span> &amp;&amp; !end_of_file_) {</div>
+<div class="line"><span class="lineno">   38</span>                    data.push_back(tec_char_);</div>
+<div class="line"><span class="lineno">   39</span>                    GetChar();</div>
+<div class="line"><span class="lineno">   40</span>                }</div>
+<div class="line"><span class="lineno">   41</span>                data_.emplace_back(<a class="code hl_enumvalue" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318bacbd3f49bc03989a6a6018e75cc97d343">Lex::kSeparator</a>, data, line_, position_ - <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(data.size()));</div>
+<div class="line"><span class="lineno">   42</span>                <span class="keywordflow">if</span> (IsSeparator(tec_char_)) {</div>
+<div class="line"><span class="lineno">   43</span>                    GetChar();</div>
+<div class="line"><span class="lineno">   44</span>                }</div>
+<div class="line"><span class="lineno">   45</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tec_char_ == <span class="charliteral">&#39;#&#39;</span>) {</div>
+<div class="line"><span class="lineno">   46</span>                GetComment();</div>
+<div class="line"><span class="lineno">   47</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tec_char_ == <span class="charliteral">&#39;\n&#39;</span>) {</div>
+<div class="line"><span class="lineno">   48</span>                std::string data = <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   49</span>                data_.emplace_back(<a class="code hl_enumvalue" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318ba80ded164d8ca0218709503e1f96d99e5">Lex::kEndLine</a>, data, line_, position_ - <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(data.size()));</div>
+<div class="line"><span class="lineno">   50</span>                GetChar();</div>
+<div class="line"><span class="lineno">   51</span>                position_ = 1;</div>
+<div class="line"><span class="lineno">   52</span>                ++line_;</div>
+<div class="line"><span class="lineno">   53</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   54</span>                <span class="keywordflow">if</span> (tec_char_ != <span class="charliteral">&#39;\r&#39;</span>) {</div>
+<div class="line"><span class="lineno">   55</span>                    std::string ans = <span class="stringliteral">&quot;unresolved external character: &quot;</span>;</div>
+<div class="line"><span class="lineno">   56</span>                    ans.push_back(tec_char_);</div>
+<div class="line"><span class="lineno">   57</span>                    <span class="keywordflow">throw</span> std::runtime_error(ans);</div>
+<div class="line"><span class="lineno">   58</span>                }</div>
+<div class="line"><span class="lineno">   59</span>                GetChar();</div>
+<div class="line"><span class="lineno">   60</span>            }</div>
 <div class="line"><span class="lineno">   61</span>        }</div>
-<div class="line"><span class="lineno">   62</span>        data_.emplace_back(<a class="code hl_enumvalue" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318ba80ded164d8ca0218709503e1f96d99e5">Lex::kEndLine</a>, <span class="stringliteral">&quot;\n&quot;</span>, 0, 0);</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> data_;</div>
-<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">while</span> (!data_.empty() &amp;&amp; data_.back().GetType() == <a class="code hl_enumvalue" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318ba80ded164d8ca0218709503e1f96d99e5">Lex::kEndLine</a>) {</div>
+<div class="line"><span class="lineno">   63</span>          data_.pop_back();</div>
+<div class="line"><span class="lineno">   64</span>        }</div>
+<div class="line"><span class="lineno">   65</span>        data_.emplace_back(<a class="code hl_enumvalue" href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318ba80ded164d8ca0218709503e1f96d99e5">Lex::kEndLine</a>, <span class="stringliteral">&quot;\n&quot;</span>, 0, 0);</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> data_;</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
 <div class="ttc" id="alexem_8cppm_html_a785080a344a8ac51a573996ac242318ba80ded164d8ca0218709503e1f96d99e5"><div class="ttname"><a href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318ba80ded164d8ca0218709503e1f96d99e5">Lex::kEndLine</a></div><div class="ttdeci">@ kEndLine</div></div>
 <div class="ttc" id="alexem_8cppm_html_a785080a344a8ac51a573996ac242318bacbd3f49bc03989a6a6018e75cc97d343"><div class="ttname"><a href="lexem_8cppm.html#a785080a344a8ac51a573996ac242318bacbd3f49bc03989a6a6018e75cc97d343">Lex::kSeparator</a></div><div class="ttdeci">@ kSeparator</div></div>
 </div><!-- fragment -->

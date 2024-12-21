@@ -103,20 +103,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a51b760f022cbb57b1e5c0467af6b8f7f" id="r_a51b760f022cbb57b1e5c0467af6b8f7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBor.html#a51b760f022cbb57b1e5c0467af6b8f7f">Bor</a> ()</td></tr>
 <tr class="separator:a51b760f022cbb57b1e5c0467af6b8f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95f13d396250640bdf93229c290df46d" id="r_a95f13d396250640bdf93229c290df46d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBor.html#a95f13d396250640bdf93229c290df46d">Bor</a> (const std::string &amp;file_name)</td></tr>
+<tr class="memdesc:a95f13d396250640bdf93229c290df46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание с парсингом слов из файла (используется для ключевых слов)  <br /></td></tr>
 <tr class="separator:a95f13d396250640bdf93229c290df46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4f00c90039e9f868d55945787c3d9a4" id="r_ab4f00c90039e9f868d55945787c3d9a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBor.html#ab4f00c90039e9f868d55945787c3d9a4">Find</a> (const std::string &amp;str) const</td></tr>
+<tr class="memdesc:ab4f00c90039e9f868d55945787c3d9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">поиск по бору  <br /></td></tr>
 <tr class="separator:ab4f00c90039e9f868d55945787c3d9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d321126764cc0a3f25c508f57d069fe" id="r_a9d321126764cc0a3f25c508f57d069fe"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBor.html#a9d321126764cc0a3f25c508f57d069fe">GetData</a> (const std::string &amp;str) const</td></tr>
+<tr class="memdesc:a9d321126764cc0a3f25c508f57d069fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">поиск по бору с возвратом даты  <br /></td></tr>
 <tr class="separator:a9d321126764cc0a3f25c508f57d069fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48dc854b0032cd083860151c21b76aa7" id="r_a48dc854b0032cd083860151c21b76aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBor.html#a48dc854b0032cd083860151c21b76aa7">Insert</a> (const std::string &amp;str, T data)</td></tr>
+<tr class="memdesc:a48dc854b0032cd083860151c21b76aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">вставка в бор с датой  <br /></td></tr>
 <tr class="separator:a48dc854b0032cd083860151c21b76aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac57f6be691075569d49d15b7d1dc0dde" id="r_ac57f6be691075569d49d15b7d1dc0dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBor.html#ac57f6be691075569d49d15b7d1dc0dde">Insert</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:ac57f6be691075569d49d15b7d1dc0dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">вставка в бор без даты  <br /></td></tr>
 <tr class="separator:ac57f6be691075569d49d15b7d1dc0dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class Bor&lt; T &gt;</div>
-<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00011">11</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
+class Bor&lt; T &gt;</div><p>Класс словаря, хранит шаблонную дату по ключу string </p>
+
+<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00014">14</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a51b760f022cbb57b1e5c0467af6b8f7f" name="a51b760f022cbb57b1e5c0467af6b8f7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51b760f022cbb57b1e5c0467af6b8f7f">&#9670;&#160;</a></span>Bor() <span class="overload">[1/2]</span></h2>
@@ -143,8 +149,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00013">13</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>: root_(std::make_unique&lt;Node&gt;()) {}</div>
+<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00016">16</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>: root_(std::make_unique&lt;Node&gt;()) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -174,15 +180,17 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00015">15</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>                                    : root_(std::make_unique&lt;Node&gt;()) {</div>
-<div class="line"><span class="lineno">   16</span>        std::ifstream in(file_name);</div>
-<div class="line"><span class="lineno">   17</span>        std::string token;</div>
-<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">while</span> (in &gt;&gt; token) {</div>
-<div class="line"><span class="lineno">   19</span>            <a class="code hl_function" href="classBor.html#a48dc854b0032cd083860151c21b76aa7">Insert</a>(token);</div>
-<div class="line"><span class="lineno">   20</span>        }</div>
-<div class="line"><span class="lineno">   21</span>    }</div>
-<div class="ttc" id="aclassBor_html_a48dc854b0032cd083860151c21b76aa7"><div class="ttname"><a href="classBor.html#a48dc854b0032cd083860151c21b76aa7">Bor::Insert</a></div><div class="ttdeci">void Insert(const std::string &amp;str, T data)</div><div class="ttdef"><b>Definition</b> <a href="bor_8cppm_source.html#l00042">bor.cppm:42</a></div></div>
+<p>Создание с парсингом слов из файла (используется для ключевых слов) </p>
+
+<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00019">19</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                    : root_(std::make_unique&lt;Node&gt;()) {</div>
+<div class="line"><span class="lineno">   20</span>        std::ifstream in(file_name);</div>
+<div class="line"><span class="lineno">   21</span>        std::string token;</div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">while</span> (in &gt;&gt; token) {</div>
+<div class="line"><span class="lineno">   23</span>            <a class="code hl_function" href="classBor.html#a48dc854b0032cd083860151c21b76aa7">Insert</a>(token);</div>
+<div class="line"><span class="lineno">   24</span>        }</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="ttc" id="aclassBor_html_a48dc854b0032cd083860151c21b76aa7"><div class="ttname"><a href="classBor.html#a48dc854b0032cd083860151c21b76aa7">Bor::Insert</a></div><div class="ttdeci">void Insert(const std::string &amp;str, T data)</div><div class="ttdoc">вставка в бор с датой</div><div class="ttdef"><b>Definition</b> <a href="bor_8cppm_source.html#l00049">bor.cppm:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -213,17 +221,19 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00023">23</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>                                          {</div>
-<div class="line"><span class="lineno">   24</span>        Node *tec_root = root_.get();</div>
-<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : str) {</div>
-<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">if</span> (tec_root-&gt;alph.find(elem) == tec_root-&gt;alph.end()) {</div>
-<div class="line"><span class="lineno">   27</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   28</span>            }</div>
-<div class="line"><span class="lineno">   29</span>            tec_root = tec_root-&gt;alph[elem].get();</div>
-<div class="line"><span class="lineno">   30</span>        }</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">return</span> tec_root-&gt;is_term;</div>
-<div class="line"><span class="lineno">   32</span>    }</div>
+<p>поиск по бору </p>
+
+<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00028">28</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>                                          {</div>
+<div class="line"><span class="lineno">   29</span>        Node *tec_root = root_.get();</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : str) {</div>
+<div class="line"><span class="lineno">   31</span>            <span class="keywordflow">if</span> (tec_root-&gt;alph.find(elem) == tec_root-&gt;alph.end()) {</div>
+<div class="line"><span class="lineno">   32</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   33</span>            }</div>
+<div class="line"><span class="lineno">   34</span>            tec_root = tec_root-&gt;alph[elem].get();</div>
+<div class="line"><span class="lineno">   35</span>        }</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span> tec_root-&gt;is_term;</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,14 +263,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00034">34</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                           {</div>
-<div class="line"><span class="lineno">   35</span>        Node *tec_root = root_.get();</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : str) {</div>
-<div class="line"><span class="lineno">   37</span>            tec_root = tec_root-&gt;alph[elem].get();</div>
-<div class="line"><span class="lineno">   38</span>        }</div>
-<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">return</span> tec_root-&gt;data_;</div>
-<div class="line"><span class="lineno">   40</span>    }</div>
+<p>поиск по бору с возвратом даты </p>
+
+<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00040">40</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                           {</div>
+<div class="line"><span class="lineno">   41</span>        Node *tec_root = root_.get();</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : str) {</div>
+<div class="line"><span class="lineno">   43</span>            tec_root = tec_root-&gt;alph[elem].get();</div>
+<div class="line"><span class="lineno">   44</span>        }</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> tec_root-&gt;data_;</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -290,17 +302,19 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00054">54</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                                      {</div>
-<div class="line"><span class="lineno">   55</span>        Node *tec_root = root_.get();</div>
-<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : str) {</div>
-<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">if</span> (tec_root-&gt;alph.find(elem) == tec_root-&gt;alph.end()) {</div>
-<div class="line"><span class="lineno">   58</span>                tec_root-&gt;alph[elem] = std::make_unique&lt;Node&gt;();</div>
-<div class="line"><span class="lineno">   59</span>            }</div>
-<div class="line"><span class="lineno">   60</span>            tec_root = tec_root-&gt;alph[elem].get();</div>
-<div class="line"><span class="lineno">   61</span>        }</div>
-<div class="line"><span class="lineno">   62</span>        tec_root-&gt;is_term = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
+<p>вставка в бор без даты </p>
+
+<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00062">62</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                      {</div>
+<div class="line"><span class="lineno">   63</span>        Node *tec_root = root_.get();</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : str) {</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">if</span> (tec_root-&gt;alph.find(elem) == tec_root-&gt;alph.end()) {</div>
+<div class="line"><span class="lineno">   66</span>                tec_root-&gt;alph[elem] = std::make_unique&lt;Node&gt;();</div>
+<div class="line"><span class="lineno">   67</span>            }</div>
+<div class="line"><span class="lineno">   68</span>            tec_root = tec_root-&gt;alph[elem].get();</div>
+<div class="line"><span class="lineno">   69</span>        }</div>
+<div class="line"><span class="lineno">   70</span>        tec_root-&gt;is_term = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -340,18 +354,20 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00042">42</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                              {</div>
-<div class="line"><span class="lineno">   43</span>        Node *tec_root = root_.get();</div>
-<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : str) {</div>
-<div class="line"><span class="lineno">   45</span>            <span class="keywordflow">if</span> (tec_root-&gt;alph.find(elem) == tec_root-&gt;alph.end()) {</div>
-<div class="line"><span class="lineno">   46</span>                tec_root-&gt;alph[elem] = std::make_unique&lt;Node&gt;();</div>
-<div class="line"><span class="lineno">   47</span>            }</div>
-<div class="line"><span class="lineno">   48</span>            tec_root = tec_root-&gt;alph[elem].get();</div>
-<div class="line"><span class="lineno">   49</span>        }</div>
-<div class="line"><span class="lineno">   50</span>        tec_root-&gt;is_term = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   51</span>        tec_root-&gt;data_ = data;</div>
-<div class="line"><span class="lineno">   52</span>    }</div>
+<p>вставка в бор с датой </p>
+
+<p class="definition">Definition at line <a class="el" href="bor_8cppm_source.html#l00049">49</a> of file <a class="el" href="bor_8cppm_source.html">bor.cppm</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                              {</div>
+<div class="line"><span class="lineno">   50</span>        Node *tec_root = root_.get();</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;elem : str) {</div>
+<div class="line"><span class="lineno">   52</span>            <span class="keywordflow">if</span> (tec_root-&gt;alph.find(elem) == tec_root-&gt;alph.end()) {</div>
+<div class="line"><span class="lineno">   53</span>                tec_root-&gt;alph[elem] = std::make_unique&lt;Node&gt;();</div>
+<div class="line"><span class="lineno">   54</span>            }</div>
+<div class="line"><span class="lineno">   55</span>            tec_root = tec_root-&gt;alph[elem].get();</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span>        tec_root-&gt;is_term = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   58</span>        tec_root-&gt;data_ = data;</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
