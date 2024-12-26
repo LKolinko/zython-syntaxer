@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['in_5farray_5ftype_0',['in_array_type',['../structTid_1_1Variable__Node.html#a6c08a5ab2ec1f59c1b91101fe02bca5e',1,'Tid::Variable_Node']]],
-  ['index_1',['index',['../classLexem.html#a5d369c9f8a2b2b500b1d2ac62b0b15f5',1,'Lexem']]],
-  ['insert_2',['insert',['../classArifmTree.html#a4a77058736b9b5dfc3715d78784c0b2c',1,'ArifmTree::Insert()'],['../classBor.html#a48dc854b0032cd083860151c21b76aa7',1,'Bor::Insert(const std::string &amp;str, T data)'],['../classBor.html#ac57f6be691075569d49d15b7d1dc0dde',1,'Bor::Insert(const std::string &amp;str)']]],
-  ['insertfunction_3',['InsertFunction',['../classTid.html#a1133913a33c7f5fe81a0fe963c06b2dc',1,'Tid']]],
-  ['insertvariable_4',['InsertVariable',['../classTid.html#a24e3dfab700760fbeacb2654acc13a42',1,'Tid']]],
-  ['integer_5',['Integer',['../tid_8cppm.html#a549ef1b707f019389b0b2636b40cd7d8aa0faef0851b4294c06f2b94bb1cb2044',1,'tid.cppm']]]
+  ['find_0',['Find',['../classBor.html#ab4f00c90039e9f868d55945787c3d9a4',1,'Bor']]],
+  ['findfunction_1',['FindFunction',['../classTid.html#a57abf6d5d9dc7769c9d5fca2a60c524f',1,'Tid']]],
+  ['findvariable_2',['FindVariable',['../classTid.html#a6c9515ed02b55ece1c4b58921da01c49',1,'Tid']]],
+  ['float_3',['Float',['../tid_8cppm.html#a549ef1b707f019389b0b2636b40cd7d8a22ae0e2b89e5e3d477f988cc36d3272b',1,'tid.cppm']]],
+  ['format_4',['format',['../structstd_1_1formatter_3_01decltype_07std_1_1declval_3_01Lexem_01_4_07_08_8GetPosition_07_08_08_4.html#af9fe3cdee59df8ade9ee6e4aa470250d',1,'std::formatter&lt; decltype(std::declval&lt; Lexem &gt;().GetPosition())&gt;']]],
+  ['formatter_3c_20decltype_28std_3a_3adeclval_3c_20lexem_20_3e_28_29_2egetposition_28_29_29_3e_5',['formatter&lt; decltype(std::declval&lt; Lexem &gt;().GetPosition())&gt;',['../structstd_1_1formatter_3_01decltype_07std_1_1declval_3_01Lexem_01_4_07_08_8GetPosition_07_08_08_4.html',1,'std']]],
+  ['func_5fname_6',['func_name',['../structFunctionInv.html#a5399ddf51ca614227f2feb95c95bae68',1,'FunctionInv']]],
+  ['func_5ftable_7',['func_table',['../ast__builder_8cppm.html#aee4b481351fe24233a6a049592024966',1,'ast_builder.cppm']]],
+  ['function_5fnode_8',['function_node',['../structTid_1_1Function__Node.html',1,'Tid::Function_Node'],['../structTid_1_1Function__Node.html#a669e4145704a194b9535bbccce16c352',1,'Tid::Function_Node::Function_Node()=default'],['../structTid_1_1Function__Node.html#a26d06c9b064d69dc9fda03b8b6479d73',1,'Tid::Function_Node::Function_Node(const std::string &amp;s)']]],
+  ['functiondecl_9',['FunctionDecl',['../structFunctionDecl.html',1,'']]],
+  ['functioninv_10',['FunctionInv',['../structFunctionInv.html',1,'']]]
 ];

@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['find_0',['Find',['../classBor.html#ab4f00c90039e9f868d55945787c3d9a4',1,'Bor']]],
-  ['findfunction_1',['FindFunction',['../classTid.html#a57abf6d5d9dc7769c9d5fca2a60c524f',1,'Tid']]],
-  ['findvariable_2',['FindVariable',['../classTid.html#a6c9515ed02b55ece1c4b58921da01c49',1,'Tid']]],
-  ['format_3',['format',['../structstd_1_1formatter_3_01decltype_07std_1_1declval_3_01Lexem_01_4_07_08_8GetPosition_07_08_08_4.html#af9fe3cdee59df8ade9ee6e4aa470250d',1,'std::formatter&lt; decltype(std::declval&lt; Lexem &gt;().GetPosition())&gt;']]],
-  ['function_5fnode_4',['function_node',['../structTid_1_1Function__Node.html#a669e4145704a194b9535bbccce16c352',1,'Tid::Function_Node::Function_Node()=default'],['../structTid_1_1Function__Node.html#a26d06c9b064d69dc9fda03b8b6479d73',1,'Tid::Function_Node::Function_Node(const std::string &amp;s)']]]
+  ['evaluate_0',['evaluate',['../structExpressionI.html#a37dd0b5b0facb779ce390ec71d9950d0',1,'ExpressionI::Evaluate()'],['../structSubtract.html#a6dcb097df0819099c83a8a2a466be0ec',1,'Subtract::Evaluate()'],['../structAdd.html#ab4be96c9d51440733d97332349f04e7c',1,'Add::Evaluate()'],['../structDivide.html#a91a5460947d34ad694ee280391f88f2d',1,'Divide::Evaluate()'],['../structDividAndRound.html#a022df82b25a986879a5ef5e107d1e965',1,'DividAndRound::Evaluate()'],['../structMultiply.html#a7f2e7f98622894fe43ffc2cc6518fb06',1,'Multiply::Evaluate()'],['../structBreak.html#aac897abe0c3a9d9a5d276b2cc7b570af',1,'Break::Evaluate()'],['../structReturnSttmnt.html#ae4741ce598072333cb430a485a3db6e2',1,'ReturnSttmnt::Evaluate()'],['../structFunctionDecl.html#a14975254a98014be6351828cb8f61ea7',1,'FunctionDecl::Evaluate()'],['../structFunctionInv.html#aec9bcf567f8bcd5ee855de2dc8f9f888',1,'FunctionInv::Evaluate()'],['../structAssignment.html#afa88b28c115520ae4c6cf872ec3152c7',1,'Assignment::Evaluate()'],['../structCycle.html#a71f90d724d6c9d308e29bfd2ab33dac7',1,'Cycle::Evaluate()']]]
 ];

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['getdata_0',['getdata',['../classBor.html#a9d321126764cc0a3f25c508f57d069fe',1,'Bor::GetData()'],['../classLexem.html#aba4f1ed0d6ad770fe4b443ccc3d38631',1,'Lexem::GetData()']]],
-  ['getlats_1',['GetLats',['../classArifmTree.html#a2f99bc1b8812f0d7b246ed3fd87c3880',1,'ArifmTree']]],
-  ['getposition_2',['GetPosition',['../classLexem.html#aed9be2741c355004b0cb2b6b9d8ec154',1,'Lexem']]],
-  ['gettype_3',['GetType',['../classLexem.html#aa909e6ea790b962da44474366446f1a3',1,'Lexem']]]
+  ['find_0',['Find',['../classBor.html#ab4f00c90039e9f868d55945787c3d9a4',1,'Bor']]],
+  ['findfunction_1',['FindFunction',['../classTid.html#a57abf6d5d9dc7769c9d5fca2a60c524f',1,'Tid']]],
+  ['findvariable_2',['FindVariable',['../classTid.html#a6c9515ed02b55ece1c4b58921da01c49',1,'Tid']]],
+  ['format_3',['format',['../structstd_1_1formatter_3_01decltype_07std_1_1declval_3_01Lexem_01_4_07_08_8GetPosition_07_08_08_4.html#af9fe3cdee59df8ade9ee6e4aa470250d',1,'std::formatter&lt; decltype(std::declval&lt; Lexem &gt;().GetPosition())&gt;']]],
+  ['function_5fnode_4',['function_node',['../structTid_1_1Function__Node.html#a669e4145704a194b9535bbccce16c352',1,'Tid::Function_Node::Function_Node()=default'],['../structTid_1_1Function__Node.html#a26d06c9b064d69dc9fda03b8b6479d73',1,'Tid::Function_Node::Function_Node(const std::string &amp;s)']]]
 ];

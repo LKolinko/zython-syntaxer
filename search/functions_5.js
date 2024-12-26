@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['lexem_0',['Lexem',['../classLexem.html#a865e947b1f396fbc6dd4c66714707e8a',1,'Lexem']]],
-  ['lexer_1',['lexer',['../classLexer.html#a4ece67400cc4fdf07d1dae1b586fa0e1',1,'Lexer::Lexer()=default'],['../classLexer.html#aab743e2307b5ccd9dfd39744168d4304',1,'Lexer::Lexer(const std::string &amp;file_name, const std::string &amp;token_file_name)']]]
+  ['insert_0',['insert',['../classArifmTree.html#a4a77058736b9b5dfc3715d78784c0b2c',1,'ArifmTree::Insert()'],['../classBor.html#a48dc854b0032cd083860151c21b76aa7',1,'Bor::Insert(const std::string &amp;str, T data)'],['../classBor.html#ac57f6be691075569d49d15b7d1dc0dde',1,'Bor::Insert(const std::string &amp;str)']]],
+  ['insertfunction_1',['InsertFunction',['../classTid.html#a1133913a33c7f5fe81a0fe963c06b2dc',1,'Tid']]],
+  ['insertvariable_2',['InsertVariable',['../classTid.html#a24e3dfab700760fbeacb2654acc13a42',1,'Tid']]]
 ];

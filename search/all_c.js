@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['scan_0',['Scan',['../classLexer.html#a12d08a5047b6cde9dd0a033d3b99e46c',1,'Lexer']]],
-  ['string_1',['String',['../tid_8cppm.html#a549ef1b707f019389b0b2636b40cd7d8a27118326006d3829667a400ad23d5d98',1,'tid.cppm']]],
-  ['syntaxer_2',['syntaxer',['../module_syntaxer.html',1,'']]],
-  ['syntaxer_2ecppm_3',['syntaxer.cppm',['../syntaxer_8cppm.html',1,'']]],
-  ['syntaxvalidator_4',['syntaxvalidator',['../classSyntaxValidator.html',1,'SyntaxValidator'],['../classSyntaxValidator.html#ae60fb8d926ee84e83a310513d54a9b61',1,'SyntaxValidator::SyntaxValidator()']]]
+  ['operator_21_3d_0',['operator!=',['../structTid_1_1Variable__Node.html#ad2f9c824ac07bb74113055d78087507f',1,'Tid::Variable_Node']]],
+  ['operator_3d_3d_1',['operator==',['../structTid_1_1Variable__Node.html#a5c07cb437b92844e812fcd21eea165ea',1,'Tid::Variable_Node']]],
+  ['optimizing_5fassert_2',['OPTIMIZING_ASSERT',['../syntaxer_8cppm.html#ad1c8a7fe15d7f9deab69c118a6cae485',1,'syntaxer.cppm']]]
 ];
